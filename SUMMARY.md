@@ -3,6 +3,13 @@
 
 # 实用技术栈（正面）
 ## 操作系统/Linux的组成原理
+用嵌入式的经验来透视linux，分解再定制，庖丁解牛，亲手定制最小化Linux。
+
+* [了解真正的GNU/Linux](GNU_LINUX.md)
+* [定制化Linux操作系统](MAKE_YOUR_LINUX.md)
+* [编译合适的内核](MAKE_YOUR_KERNEL.md)
+* [批量安装系统的利器](FAST_MORE_LINUX.md)
+
 ## Linux Shell编程实践
 ## 操作系统性能及网络优化
 ## 应用广泛的最佳实战服务
