@@ -4,7 +4,7 @@
 
 ## 前言\(悟空的唠叨）
 
-* [作者序](qian-yan-wu-kong-de-lao-tao/readme.md)
+* [作者序](qian-yan-wu-kong-de-lao-tao/qian-yan-wu-kong-de-lao-tao.md)
 * [关于我](qian-yan-wu-kong-de-lao-tao/guan-yu-wo.md)
 * [技术管理实践](qian-yan-wu-kong-de-lao-tao/ji-shu-guan-li-shi-jian.md)
 * [DevOps的八荣八耻](qian-yan-wu-kong-de-lao-tao/devops-de-ba-rong-ba-chi.md)
