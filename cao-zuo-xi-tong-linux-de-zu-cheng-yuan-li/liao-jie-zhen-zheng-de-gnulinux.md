@@ -24,11 +24,11 @@ GNU计划，又称"革奴计划"，是由Richard Stallman在1983年9月27日公�
 
 > 但是大家要知道，30年前的带宽远没有现在的快，而且非常昂贵，于是Perl之父Larry_Wall（除了耳熟能详的Perl语言，其实patch这个程序也是他写的），编写并开源了patch程序，正因为有了patch小程序，再也不需要软件整体拷贝重新发送，只要diff生成差异化文件，尺寸变得很小，用patch就可以让程序员之间很方便的共享"补丁"，让源码同步变得非常简单、更加方便和及时，可以集数量众多的极客智慧共同改进一个产品，这也是体现了GNU伟大的开源奉献精神！
 
-![Linux内核](https://raw.githubusercontent.com/shaohaiyang/rootlinux/master/images/s1_2_kernel.png)
+![Linux内核](https://raw.githubusercontent.com/shaohaiyang/rootlinux/master/images/s1_2_kernel.jpg)
 
 ### Linux和操作系统的关系 
 
-> Linux只是一个[[mybook:kernel|Kernel 内核]]!!! ，Kernel内核是提供硬件驱动的抽象层、文件系统、多任务等功能的系统软件，它封装好更加安全方便的与硬件紧密结合打交道的各种接口，可以把它理解成汽车上联系各个组件的CAN BUS总线系统。特点如下：
+Linux只是一个[[mybook:kernel|Kernel 内核]]!!! ，Kernel内核是提供硬件驱动的抽象层、文件系统、多任务等功能的系统软件，它封装好更加安全方便的与硬件紧密结合打交道的各种接口，可以把它理解成汽车上联系各个组件的CAN BUS总线系统。特点如下：
 * 负责底层的硬件驱动,如电源，CPU，内存，硬盘，网卡，音视频硬件，定时器，各种输入输出设备；
 * 它是一个模块化的宏内核，设备驱动程序可以完全访问硬件，并在系统运行期间可直接装载或卸载。
 * 除了提供硬件抽象层外，它还封装了一些对编程友好的系统调用，包括如文件系统，进程管理，内存管理，调度器，加密API，KVM内核级虚拟化，IPC进程间通信和调度；
@@ -38,7 +38,7 @@ GNU计划，又称"革奴计划"，是由Richard Stallman在1983年9月27日公�
 
 
 ### 为什么需要发行版本 
-> 因为在GNU自由开源的集市开发模式下，很多的组件都是各自发展的，这一方面展示了蓬勃的生命力，另一方面也给软件间的协作带来困扰，导致并不是所有软件版本越新越好。于是，有些集成厂商会设置固定的截止日期，然后以此基础上做了大量软件版本的兼容性测试、整合、bug修复、安全加固等工作，除此之外还具备了一些人们所期待的特性，如：
+因为在GNU自由开源的集市开发模式下，很多的组件都是各自发展的，这一方面展示了蓬勃的生命力，另一方面也给软件间的协作带来困扰，导致并不是所有软件版本越新越好。于是，有些集成厂商会设置固定的截止日期，然后以此基础上做了大量软件版本的兼容性测试、整合、bug修复、安全加固等工作，除此之外还具备了一些人们所期待的特性，如：
 
 * Redhat偏重于安全，稳定，可靠，有3～6个月的发布节奏及3～10年的生命周期，商业测试覆盖率高；
 * Debian/Ubuntu有特别好用且量大的apt软件仓库，更加人性化的交互体验和活跃的社区支持；
@@ -52,9 +52,11 @@ GNU/Linux代码本身并不收费，但提供了可收费的技术支持，满�
 下面列举一些古老的，但仍然充满活力的Linux发行版本：
 
 <font color=red size=+1><b>Slackware</b></font> Linux操作系统由Patrick Volkerding创建于1992年，是现存最古老的Linux发行版。它最大的特色就是基于shell和原生的简单PKG包管理机制，保持了GNU的原汁原味。
--------
+
 <font color=red size=+1><b>Debian</b></font> GNU / Linux 首次公布于1993年。其创始人为Ian Murdock（创始人因为莫名的原因选择了自杀，至今仍然是个谜），他设想通过已有的数百位开发志愿者在业余时间创建一个完全非商业目的的发行版。它成为最大的Linux发行版，也可能是迄今为止最大的协同软件项目！它的变种Ubuntu在南非富翁的赞助下已经变成了最流行的发行版本之一。
--------
+
+
 <font color=red size=+1><b>openSUSE</b></font> 的开始可追溯到1992年，德国的四个Linux爱好者 – Roland Dyroff, Thomas Fehr, Hubert Mantel和 Burchard Steinbild – 共同推出的SuSE Linux操作系统下的一个项目（Software und System Entwicklung）。在初期，年轻的公司出售载有德国版Slackware Linux的软盘，但是不久在1996年5月SuSE Linux 从4.2版开始作为独立版本发布。
-------
+
+
 <font color=red size=+1><b>Redhat</b></font> 发行版本起源可追溯至1995年，它是由两个Linux梦想家 – Bob Young和 Marc Ewing（在红帽Linux的名字）共同创建推出。1997年，红帽公司推出了其革命性的RPM包管理方案及其他高级特性，这极大的促进了发行版急速上升和普及，超越Slackware Linux成为全球最广泛使用的Linux发行版。在随后几年中，红帽公司制定了标准，每6个月发行的时间表。
