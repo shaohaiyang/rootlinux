@@ -9,7 +9,7 @@ GNU计划，又称"革奴计划"，是由Richard Stallman在1983年9月27日公�
 
 > GNU计划具有浓烈的理想主义色彩，同时也是开源世界的火种起源，试想在那个金钱、版权至上，计算机还是稀罕物的年代，一般会编程的人尤其是像R.S，70年代的哈佛高材生又受聘于麻省理工学院（MIT）人工智能实验室工作近10年的大神肯定能赚的盆满钵满，但是R.S这样的勇士敢于追寻自由的境界，才有了后面孕育Linux的温床，又掀起了持续至今的开源自由的OpenSource大潮，这是多大伟大的理想。
 
-1985年Richard Stallman又创立了自由软件基金会（Free Software Foundation，<font color=red><b>Free是自由、开源的意思，不是免费！</b></font>）来为GNU计划提供技术、法律以及财政支持。尽管GNU计划大部分时候是由个人自愿无偿贡献，但FSF有时还是会聘请程序员帮助编写。当GNU计划开始逐渐获得成功时，一些商业公司开始介入开发和技术支持。当中最著名的就是之后被Red Hat兼并的 Cygnus Solutions。
+1985年Richard Stallman又创立了自由软件基金会（Free Software Foundation，&#x1F539; <font color=red><b>Free是自由、开源的意思，不是免费！</b></font>）来为GNU计划提供技术、法律以及财政支持。尽管GNU计划大部分时候是由个人自愿无偿贡献，但FSF有时还是会聘请程序员帮助编写。当GNU计划开始逐渐获得成功时，一些商业公司开始介入开发和技术支持。当中最著名的就是之后被Red Hat兼并的 Cygnus Solutions。
 
 1990年，GNU计划已经开发出的软件包括了一个功能强大的文字编辑器Emacs（史上最极客的鸡爪编辑器） 。GCC（GNU Compiler Collection，GNU编译器集合），是一套由 GNU 开发的编程语言编译器。以及大部分UNIX系统的程序库和工具。唯一依然没有完成的重要组件就是操作系统的内核(称为HURD)。
 
@@ -34,7 +34,7 @@ Linux只是一个[Kernel 内核](LINUX_KERNEL.md)!!! ，Kernel内核是提供硬
 * 除了提供硬件抽象层外，它还封装了一些对编程友好的系统调用，包括如文件系统，进程管理，内存管理，调度器，加密API，KVM内核级虚拟化，IPC进程间通信和调度；
 * 一些内核级应用程序的高效调用，如lvs，iptables，VLAN，aoe/iscsi/nfs/samba/rdb等内核级应用
 
-注意：<html><font color=red><b>Linux并不是一套完整的操作系统</b></font></html>。直到1992年Linux与其他GNU软件结合，完全自由的操作系统才正式诞生，该操作系统往往被称为“GNU/Linux”或简称Linux。
+注意：&#x1F539;<html><font color=red><b>Linux并不是一套完整的操作系统</b></font></html>。直到1992年Linux与其他GNU软件结合，完全自由的操作系统才正式诞生，该操作系统往往被称为“GNU/Linux”或简称Linux。
 
 
 ### 为什么需要发行版本 
