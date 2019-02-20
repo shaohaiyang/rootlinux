@@ -1,8 +1,8 @@
 # Table of contents
 
-* [【Linux趣人生】](README.md)
+* [悟空的念叨](README.md)
 
-## 前言\(悟空的唠叨）
+## 前  言
 
 * [作者序](qian-yan-wu-kong-de-lao-tao/qian-yan-wu-kong-de-lao-tao.md)
 * [关于我](qian-yan-wu-kong-de-lao-tao/guan-yu-wo.md)
