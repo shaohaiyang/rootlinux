@@ -1,0 +1,608 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Bash编程 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="sed-bian-cheng.html" />
+    
+    
+    <link rel="prev" href="../cao-zuo-xi-tong-linux-de-zu-cheng-yuan-li/pi-liang-an-zhuang-xi-tong-de-li-qi.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    【Linux趣人生】
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">前言(悟空的唠叨）</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../qian-yan-wu-kong-de-lao-tao/qian-yan-wu-kong-de-lao-tao.html">
+            
+                <a href="../qian-yan-wu-kong-de-lao-tao/qian-yan-wu-kong-de-lao-tao.html">
+            
+                    
+                    作者序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../qian-yan-wu-kong-de-lao-tao/guan-yu-wo.html">
+            
+                <a href="../qian-yan-wu-kong-de-lao-tao/guan-yu-wo.html">
+            
+                    
+                    关于我
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../qian-yan-wu-kong-de-lao-tao/ji-shu-guan-li-shi-jian.html">
+            
+                <a href="../qian-yan-wu-kong-de-lao-tao/ji-shu-guan-li-shi-jian.html">
+            
+                    
+                    技术管理实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../qian-yan-wu-kong-de-lao-tao/devops-de-ba-rong-ba-chi.html">
+            
+                <a href="../qian-yan-wu-kong-de-lao-tao/devops-de-ba-rong-ba-chi.html">
+            
+                    
+                    DevOps的八荣八耻
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">操作系统/Linux的组成原理</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../cao-zuo-xi-tong-linux-de-zu-cheng-yuan-li/liao-jie-zhen-zheng-de-gnulinux.html">
+            
+                <a href="../cao-zuo-xi-tong-linux-de-zu-cheng-yuan-li/liao-jie-zhen-zheng-de-gnulinux.html">
+            
+                    
+                    了解真正的GNU/Linux
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../cao-zuo-xi-tong-linux-de-zu-cheng-yuan-li/ding-zhi-hua-linux-cao-zuo-xi-tong.html">
+            
+                <a href="../cao-zuo-xi-tong-linux-de-zu-cheng-yuan-li/ding-zhi-hua-linux-cao-zuo-xi-tong.html">
+            
+                    
+                    定制化Linux操作系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../cao-zuo-xi-tong-linux-de-zu-cheng-yuan-li/bian-yi-he-shi-de-nei-he.html">
+            
+                <a href="../cao-zuo-xi-tong-linux-de-zu-cheng-yuan-li/bian-yi-he-shi-de-nei-he.html">
+            
+                    
+                    编译合适的内核
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../cao-zuo-xi-tong-linux-de-zu-cheng-yuan-li/pi-liang-an-zhuang-xi-tong-de-li-qi.html">
+            
+                <a href="../cao-zuo-xi-tong-linux-de-zu-cheng-yuan-li/pi-liang-an-zhuang-xi-tong-de-li-qi.html">
+            
+                    
+                    批量安装系统的利器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Linux Shell编程实践</li>
+        
+        
+    
+        <li class="chapter active" data-level="4.1" data-path="bash-bian-cheng.html">
+            
+                <a href="bash-bian-cheng.html">
+            
+                    
+                    Bash编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="sed-bian-cheng.html">
+            
+                <a href="sed-bian-cheng.html">
+            
+                    
+                    Sed编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="awk-bian-cheng.html">
+            
+                <a href="awk-bian-cheng.html">
+            
+                    
+                    AWK编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">操作系统性能及网络优化</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../cao-zuo-xi-tong-xing-neng-ji-wang-luo-you-hua/li-yong-huan-cun-ji-shu-wei-ying-yong-ti-su.html">
+            
+                <a href="../cao-zuo-xi-tong-xing-neng-ji-wang-luo-you-hua/li-yong-huan-cun-ji-shu-wei-ying-yong-ti-su.html">
+            
+                    
+                    利用缓存技术为应用提速
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../cao-zuo-xi-tong-xing-neng-ji-wang-luo-you-hua/xi-tong-tiao-du-suan-fa-he-you-hua.html">
+            
+                <a href="../cao-zuo-xi-tong-xing-neng-ji-wang-luo-you-hua/xi-tong-tiao-du-suan-fa-he-you-hua.html">
+            
+                    
+                    系统调度算法和优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../cao-zuo-xi-tong-xing-neng-ji-wang-luo-you-hua/wen-jian-xi-tong-tiao-you-ji-wang-luo-tiao-you.html">
+            
+                <a href="../cao-zuo-xi-tong-xing-neng-ji-wang-luo-you-hua/wen-jian-xi-tong-tiao-you-ji-wang-luo-tiao-you.html">
+            
+                    
+                    文件系统调优及网络调优
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="../cao-zuo-xi-tong-xing-neng-ji-wang-luo-you-hua/fang-huo-qiang-shi-zhan.html">
+            
+                <a href="../cao-zuo-xi-tong-xing-neng-ji-wang-luo-you-hua/fang-huo-qiang-shi-zhan.html">
+            
+                    
+                    防火墙实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">应用广泛的最佳实战服务</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../ying-yong-guang-fan-de-zui-jia-shi-zhan-fu-wu/nginx-shen-qi-lua-shen-qi.html">
+            
+                <a href="../ying-yong-guang-fan-de-zui-jia-shi-zhan-fu-wu/nginx-shen-qi-lua-shen-qi.html">
+            
+                    
+                    Nginx神器/Lua神器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../ying-yong-guang-fan-de-zui-jia-shi-zhan-fu-wu/hao-hao-liao-jie-yi-xia-cdn-da-jia-zu.html">
+            
+                <a href="../ying-yong-guang-fan-de-zui-jia-shi-zhan-fu-wu/hao-hao-liao-jie-yi-xia-cdn-da-jia-zu.html">
+            
+                    
+                    好好了解一下CDN大家族
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../ying-yong-guang-fan-de-zui-jia-shi-zhan-fu-wu/zi-dong-hua-yun-wei-san-ban-fu.html">
+            
+                <a href="../ying-yong-guang-fan-de-zui-jia-shi-zhan-fu-wu/zi-dong-hua-yun-wei-san-ban-fu.html">
+            
+                    
+                    自动化运维三板斧
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="../ying-yong-guang-fan-de-zui-jia-shi-zhan-fu-wu/yun-wei-zi-dong-hua.html">
+            
+                <a href="../ying-yong-guang-fan-de-zui-jia-shi-zhan-fu-wu/yun-wei-zi-dong-hua.html">
+            
+                    
+                    运维自动化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="../ying-yong-guang-fan-de-zui-jia-shi-zhan-fu-wu/yun-wei-jian-kong-chang-tai-hua.html">
+            
+                <a href="../ying-yong-guang-fan-de-zui-jia-shi-zhan-fu-wu/yun-wei-jian-kong-chang-tai-hua.html">
+            
+                    
+                    运维监控常态化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="../ying-yong-guang-fan-de-zui-jia-shi-zhan-fu-wu/yun-wei-shu-ju-ke-shi-hua.html">
+            
+                <a href="../ying-yong-guang-fan-de-zui-jia-shi-zhan-fu-wu/yun-wei-shu-ju-ke-shi-hua.html">
+            
+                    
+                    运维数据可视化
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">高枕无忧的架构设计</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../gao-zhen-wu-you-de-jia-gou-she-ji/you-pai-yun-de-jia-gou-she-ji-he-shi-jian-zhi-lu.html">
+            
+                <a href="../gao-zhen-wu-you-de-jia-gou-she-ji/you-pai-yun-de-jia-gou-she-ji-he-shi-jian-zhi-lu.html">
+            
+                    
+                    又拍云的架构设计和实践之路
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="../gao-zhen-wu-you-de-jia-gou-she-ji/cong-wu-dao-you-gou-jian-ke-dan-xing-kuo-zhan-de-fu-wu-jia-gou.html">
+            
+                <a href="../gao-zhen-wu-you-de-jia-gou-she-ji/cong-wu-dao-you-gou-jian-ke-dan-xing-kuo-zhan-de-fu-wu-jia-gou.html">
+            
+                    
+                    从无到有构建可弹性扩展的服务架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">前沿技术研究</li>
+        
+        
+    
+        <li class="chapter " data-level="8.1" data-path="../qian-yan-ji-shu-yan-jiu/openstack-zui-jia-shi-jian.html">
+            
+                <a href="../qian-yan-ji-shu-yan-jiu/openstack-zui-jia-shi-jian.html">
+            
+                    
+                    OpenStack最佳实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" data-path="../qian-yan-ji-shu-yan-jiu/caas-rong-qi-yun-zui-jia-shi-jian.html">
+            
+                <a href="../qian-yan-ji-shu-yan-jiu/caas-rong-qi-yun-zui-jia-shi-jian.html">
+            
+                    
+                    CaaS容器云最佳实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Bash编程</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="bash&#x7F16;&#x7A0B;">Bash&#x7F16;&#x7A0B;</h1>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../cao-zuo-xi-tong-linux-de-zu-cheng-yuan-li/pi-liang-an-zhuang-xi-tong-de-li-qi.html" class="navigation navigation-prev " aria-label="Previous page: 批量安装系统的利器">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="sed-bian-cheng.html" class="navigation navigation-next " aria-label="Next page: Sed编程">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Bash编程","level":"4.1","depth":1,"next":{"title":"Sed编程","level":"4.2","depth":1,"path":"linux-shell-bian-cheng-shi-jian/sed-bian-cheng.md","ref":"linux-shell-bian-cheng-shi-jian/sed-bian-cheng.md","articles":[]},"previous":{"title":"批量安装系统的利器","level":"3.4","depth":1,"path":"cao-zuo-xi-tong-linux-de-zu-cheng-yuan-li/pi-liang-an-zhuang-xi-tong-de-li-qi.md","ref":"cao-zuo-xi-tong-linux-de-zu-cheng-yuan-li/pi-liang-an-zhuang-xi-tong-de-li-qi.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"linux-shell-bian-cheng-shi-jian/bash-bian-cheng.md","mtime":"2019-02-15T14:46:06.954Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-02-20T06:45:24.448Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

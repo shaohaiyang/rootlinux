@@ -5,11 +5,11 @@
 ![GNU_Linux关系](https://raw.githubusercontent.com/shaohaiyang/rootlinux/master/images/s1_1_gnu.png)
 
 ### GNU/Free的起源 
-GNU计划，又称"革奴计划"，是由Richard Stallman在1983年9月27日公开发起的，并发表了《GNU宣言》等解释为何发起该计划的文章，因为他看不惯大公司把Unix的版权商业化，封闭化，唯利是图。做为一名伟大的程序员兼自由斗士，他希望能够创建一套完全自由开源的操作系统。其中一个理由就是要“<font color=red><b>重现当年软件界合作互助的团结精神</b></font>”。 为保证GNU软件可以自由地“使用、复制、修改和发布”，所有GNU软件都有遵循GNU通用公共许可证的协议（GNU General Public License，GPL）, 即“反版权”（或称Copyleft）概念。
+GNU计划，又称"革奴计划"，是由Richard Stallman在1983年9月27日公开发起的，并发表了《GNU宣言》等解释为何发起该计划的文章，因为他看不惯大公司把Unix的版权商业化，封闭化，唯利是图。做为一名伟大的程序员兼自由斗士，他希望能够创建一套完全自由开源的操作系统。其中一个理由就是要<font color=red>**“重现当年软件界合作互助的团结精神”**</font>。 为保证GNU软件可以自由地“使用、复制、修改和发布”，所有GNU软件都有遵循GNU通用公共许可证的协议（GNU General Public License，GPL）, 即“反版权”（或称Copyleft）概念。
 
 > GNU计划具有浓烈的理想主义色彩，同时也是开源世界的火种起源，试想在那个金钱、版权至上，计算机还是稀罕物的年代，一般会编程的人尤其是像R.S，70年代的哈佛高材生又受聘于麻省理工学院（MIT）人工智能实验室工作近10年的大神肯定能赚的盆满钵满，但是R.S这样的勇士敢于追寻自由的境界，才有了后面孕育Linux的温床，又掀起了持续至今的开源自由的OpenSource大潮，这是多大伟大的理想。
 
-1985年Richard Stallman又创立了自由软件基金会（Free Software Foundation，&#x1F539; <font color=red><b>Free是自由、开源的意思，不是免费！</b></font>）来为GNU计划提供技术、法律以及财政支持。尽管GNU计划大部分时候是由个人自愿无偿贡献，但FSF有时还是会聘请程序员帮助编写。当GNU计划开始逐渐获得成功时，一些商业公司开始介入开发和技术支持。当中最著名的就是之后被Red Hat兼并的 Cygnus Solutions。
+1985年Richard Stallman又创立了自由软件基金会（Free Software Foundation，&#x1F539; <font color=red size=+1>** Free是自由、开源的意思，不是免费！** </font>）来为GNU计划提供技术、法律以及财政支持。尽管GNU计划大部分时候是由个人自愿无偿贡献，但FSF有时还是会聘请程序员帮助编写。当GNU计划开始逐渐获得成功时，一些商业公司开始介入开发和技术支持。当中最著名的就是之后被Red Hat兼并的 Cygnus Solutions。
 
 1990年，GNU计划已经开发出的软件包括了一个功能强大的文字编辑器Emacs（史上最极客的鸡爪编辑器） 。GCC（GNU Compiler Collection，GNU编译器集合），是一套由 GNU 开发的编程语言编译器。以及大部分UNIX系统的程序库和工具。唯一依然没有完成的重要组件就是操作系统的内核(称为HURD)。
 
