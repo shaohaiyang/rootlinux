@@ -34,7 +34,7 @@ Linux只是一个[Kernel 内核](LINUX_KERNEL.md)!!! ，Kernel内核是提供硬
 * 除了提供硬件抽象层外，它还封装了一些对编程友好的系统调用，包括如文件系统，进程管理，内存管理，调度器，加密API，KVM内核级虚拟化，IPC进程间通信和调度；
 * 一些内核级应用程序的高效调用，如lvs，iptables，VLAN，aoe/iscsi/nfs/samba/rdb等内核级应用
 
-注意：&#x1F539;<html><font color=red><b>Linux并不是一套完整的操作系统</b></font></html>。直到1992年Linux与其他GNU软件结合，完全自由的操作系统才正式诞生，该操作系统往往被称为“GNU/Linux”或简称Linux。
+注意：&#x1F539;<font color=red><b>Linux并不是一套完整的操作系统</b></font>。直到1992年Linux与其他GNU软件结合，完全自由的操作系统才正式诞生，该操作系统往往被称为“GNU/Linux”或简称Linux。
 
 
 ### 为什么需要发行版本 
